@@ -1,0 +1,6 @@
+framework module LucktasticSDK {
+  umbrella header "LucktasticSDK.h"
+
+  export *
+  module * { export * }
+}
