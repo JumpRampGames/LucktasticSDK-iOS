@@ -1,0 +1,26 @@
+PODS:
+  - LucktasticSDK (0.4):
+    - SDWebImage (~> 4.0)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+
+DEPENDENCIES:
+  - LucktasticSDK (from `https://github.com/JumpRampGames/LucktasticSDK-iOS.git`)
+
+EXTERNAL SOURCES:
+  LucktasticSDK:
+    :git: https://github.com/JumpRampGames/LucktasticSDK-iOS.git
+
+CHECKOUT OPTIONS:
+  LucktasticSDK:
+    :commit: ec3e81b893225696ce5919ec40a978d176d1dd6d
+    :git: https://github.com/JumpRampGames/LucktasticSDK-iOS.git
+
+SPEC CHECKSUMS:
+  LucktasticSDK: c414ad90b41dcacc765782c79b376726cd28592d
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+
+PODFILE CHECKSUM: f193825536f48a0835da46cea33d0065807a6dfb
+
+COCOAPODS: 1.2.1

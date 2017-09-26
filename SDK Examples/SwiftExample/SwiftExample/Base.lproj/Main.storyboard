@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Vh-sB-hjt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Table View Controller-->
+        <scene sceneID="I1c-TF-wSn">
+            <objects>
+                <tableViewController storyboardIdentifier="TableView" id="TSp-Hp-tVs" customClass="TestTableViewController" customModule="SwiftLucktastic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hEJ-Fn-1qf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="J2n-7H-hXM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J2n-7H-hXM" id="hol-QT-ypK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TSp-Hp-tVs" id="R9q-dA-Kf2"/>
+                            <outlet property="delegate" destination="TSp-Hp-tVs" id="eXh-E9-xe9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUc-TD-v6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813.5999999999999" y="-251.42428785607197"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="p7j-5e-d7m">
+            <objects>
+                <viewController id="hHx-Vo-uDJ" customClass="EmailViewController" customModule="SwiftLucktastic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NxA-Pz-emX"/>
+                        <viewControllerLayoutGuide type="bottom" id="x9N-tt-y3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0H2-0X-kj5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0u-BS-LHg">
+                                <rect key="frame" x="52" y="96" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-f3-JcP">
+                                <rect key="frame" x="25" y="64" width="300" height="81"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKf-Pe-ESk">
+                                <rect key="frame" x="60" y="182" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="onclick:" destination="hHx-Vo-uDJ" eventType="touchUpInside" id="dnL-Dr-3cH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Please enter email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiu-YT-FmC">
+                                <rect key="frame" x="16" y="153" width="343" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g2A-f3-JcP" firstAttribute="top" secondItem="NxA-Pz-emX" secondAttribute="bottom" id="2Ht-L8-MKx"/>
+                            <constraint firstItem="yKf-Pe-ESk" firstAttribute="top" secondItem="jiu-YT-FmC" secondAttribute="bottom" constant="8" id="3iZ-o0-mNH"/>
+                            <constraint firstItem="g2A-f3-JcP" firstAttribute="centerX" secondItem="0H2-0X-kj5" secondAttribute="centerX" id="3rc-Ya-Ty9"/>
+                            <constraint firstItem="P0u-BS-LHg" firstAttribute="top" secondItem="NxA-Pz-emX" secondAttribute="bottom" constant="32" id="76A-pb-N5z"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jiu-YT-FmC" secondAttribute="leading" id="C6v-Wr-ENV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jiu-YT-FmC" secondAttribute="trailing" id="DpE-Kw-hCI"/>
+                            <constraint firstItem="yKf-Pe-ESk" firstAttribute="centerX" secondItem="0H2-0X-kj5" secondAttribute="centerX" id="JQn-xG-vzg"/>
+                            <constraint firstItem="jiu-YT-FmC" firstAttribute="top" secondItem="g2A-f3-JcP" secondAttribute="bottom" constant="8" id="aFC-9a-ibW"/>
+                            <constraint firstItem="jiu-YT-FmC" firstAttribute="centerX" secondItem="0H2-0X-kj5" secondAttribute="centerX" id="c6b-n1-2Cm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xP2-kG-oY4"/>
+                    <connections>
+                        <outlet property="EmailText" destination="jiu-YT-FmC" id="ocz-fE-oMk"/>
+                        <outlet property="emailPicker" destination="g2A-f3-JcP" id="w0L-xT-0B9"/>
+                        <segue destination="TSp-Hp-tVs" kind="show" identifier="TableSegue" id="qn9-IJ-Opy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXC-1J-Gu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074.4000000000001" y="-253.2233883058471"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K4Z-eA-qhP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Vh-sB-hjt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ba-6q-wbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hHx-Vo-uDJ" kind="show" id="csu-ut-n9w"/>
+                        <segue destination="hHx-Vo-uDJ" kind="relationship" relationship="rootViewController" id="ahf-i4-dvN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uI-Pl-2gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="-262"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="csu-ut-n9w"/>
+    </inferredMetricsTieBreakers>
+</document>

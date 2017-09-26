@@ -1,0 +1,26 @@
+{
+  "name": "LucktasticSDK",
+  "version": "0.4",
+  "summary": "Lucktastic Ad SDK",
+  "description": "Integrated ad platform with chances to win real prizes!",
+  "homepage": "https://github.com/JumpRampGames",
+  "authors": {
+    "Adam Spector": "adamspector@jumprampgames.com"
+  },
+  "source": {
+    "git": "https://github.com/JumpRampGames/LucktasticSDK-iOS.git",
+    "tag": "0.4"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "ios": {
+    "vendored_frameworks": "LucktasticSDK.framework"
+  },
+  "dependencies": {
+    "SDWebImage": [
+      "~>4.0"
+    ]
+  },
+  "requires_arc": true
+}
