@@ -40,7 +40,8 @@ static NSString * _Nonnull AdCellIdentifier = @"adCell";
  @param failure       - Called when there is parsing error or error from the server response.
  @return return value - Returned AdCell UITableviewCell with ad information. If the Server API returns "show_ad": false, then an empty AdCell would be returned with height 0.
  */
-+(AdCell *_Nullable)requestAdWithPlacementId:(NSString *_Nullable)placementId success:(void(^_Nullable)())success failure:(nullable void (^) ( NSError * _Nullable error ))failure;
++(AdCell *_Nullable)requestAdWithPlacementId:(NSString *_Nullable)placementId success:(nullable void(^) (AdCell * _Nullable adCell))success failure:(nullable void (^) (NSError * _Nullable error))failure;
+//success:(nullable void(^) (AdCell * _Nullable adCell))success failure:(nullable void (^) (NSError * _Nullable error))failure{
+//+(AdCell *_Nullable)requestAdWithPlacementId:(NSString *_Nullable)placementId success:(void(^_Nullable)())success failure:(nullable void (^) ( NSError * _Nullable error ))failure;
 
-+(void)requestTest;
 @end

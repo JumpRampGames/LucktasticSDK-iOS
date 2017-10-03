@@ -3,7 +3,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LucktasticSDK'
-  s.version          = '0.4'
+  s.version          = '0.5'
   s.summary          = 'Lucktastic Ad SDK'
   s.description      = 'Integrated ad platform with chances to win real prizes!'
   s.homepage         = 'https://github.com/JumpRampGames'
